@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Meta-Learning", "Meta-Learning\Meta-Learning.pyproj", "{D26536E8-CCCC-4F1B-9AF5-AAAD6433243B}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Meta-Learner", "Meta-Learning\Meta-Learner.pyproj", "{D26536E8-CCCC-4F1B-9AF5-AAAD6433243B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DBPersistence", "DBPersistence\DBPersistence.pyproj", "{6A295B5E-E3AE-4CC2-81EC-34235526E977}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "StatisticalAnalyser", "StatisticalAnalyser\StatisticalAnalyser.pyproj", "{3632F3D5-CFB0-41D8-B74F-947AA96B2B2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D26536E8-CCCC-4F1B-9AF5-AAAD6433243B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D26536E8-CCCC-4F1B-9AF5-AAAD6433243B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A295B5E-E3AE-4CC2-81EC-34235526E977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A295B5E-E3AE-4CC2-81EC-34235526E977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3632F3D5-CFB0-41D8-B74F-947AA96B2B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3632F3D5-CFB0-41D8-B74F-947AA96B2B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,15 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>d26536e8-cccc-4f1b-9af5-aaad6433243b</ProjectGuid>
+    <ProjectGuid>3632f3d5-cfb0-41d8-b74f-947aa96b2b2d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Meta_Learning.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Meta-Learning</Name>
-    <RootNamespace>Meta-Learning</RootNamespace>
+    <Name>StatisticalAnalyser</Name>
+    <RootNamespace>StatisticalAnalyser</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Meta_Learning.py" />
+    <Compile Include="NormalityTester.py" />
+    <Compile Include="StatisticsService.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

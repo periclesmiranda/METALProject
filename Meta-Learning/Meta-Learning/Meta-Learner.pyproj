@@ -1,0 +1,89 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d26536e8-cccc-4f1b-9af5-aaad6433243b</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Meta-Learner</Name>
+    <RootNamespace>Meta-Learning</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="creation\DBCreator.py" />
+    <Compile Include="creation\StubDBCreator.py" />
+    <Compile Include="creation\SVMDBCreator.py" />
+    <Compile Include="creation\__init__.py" />
+    <Compile Include="DBRepository.py" />
+    <Compile Include="dominance\DominanceEvaluator.py" />
+    <Compile Include="dominance\Instance.py" />
+    <Compile Include="dominance\__init__.py" />
+    <Compile Include="Experiment.py" />
+    <Compile Include="extraction\FeaturesExtractor.py" />
+    <Compile Include="extraction\SVMFeaturesExtractor.py" />
+    <Compile Include="extraction\__init__.py" />
+    <Compile Include="suggestion\DistanceEvaluator.py" />
+    <Compile Include="suggestion\MultipleSolutionSuggester.py" />
+    <Compile Include="suggestion\Normalizer.py" />
+    <Compile Include="suggestion\SingleSolutionSuggester.py" />
+    <Compile Include="suggestion\SolutionGenerator.py" />
+    <Compile Include="suggestion\SolutionSuggester.py" />
+    <Compile Include="suggestion\__init__.py" />
+    <Compile Include="Teste.py" />
+    <Compile Include="ui_ml\Facade.py" />
+    <Compile Include="ui_ml\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="creation\" />
+    <Folder Include="datasets\" />
+    <Folder Include="dominance\" />
+    <Folder Include="extraction\" />
+    <Folder Include="suggestion\" />
+    <Folder Include="ui_ml\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="datasets\db_name" />
+    <Content Include="datasets\db_name.db" />
+    <Content Include="datasets\final" />
+    <Content Include="datasets\meta-base-wcci" />
+    <Content Include="datasets\meta-base-wcci-1596.db" />
+    <Content Include="datasets\meta-base-wcci.db" />
+    <Content Include="datasets\meta-base.db" />
+    <Content Include="datasets\stub.db" />
+    <Content Include="datasets\svm-single.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBPersistence\DBPersistence.pyproj">
+      <Name>DBPersistence</Name>
+      <Project>{6a295b5e-e3ae-4cc2-81ec-34235526e977}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\StatisticalAnalyser\StatisticalAnalyser.pyproj">
+      <Name>StatisticalAnalyser</Name>
+      <Project>{3632f3d5-cfb0-41d8-b74f-947aa96b2b2d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

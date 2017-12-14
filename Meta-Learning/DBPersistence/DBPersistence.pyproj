@@ -1,0 +1,58 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6a295b5e-e3ae-4cc2-81ec-34235526e977</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>DBPersistence</Name>
+    <RootNamespace>DBPersistence</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="repositories_\SQLiteRepository.py" />
+    <Compile Include="repositories_\__init__.py" />
+    <Compile Include="services\DBService.py" />
+    <Compile Include="services\IOService.py" />
+    <Compile Include="services\__init__.py" />
+    <Compile Include="Test.py" />
+    <Compile Include="util_\Util.py" />
+    <Compile Include="util_\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="datasets\" />
+    <Folder Include="repositories_\" />
+    <Folder Include="services\" />
+    <Folder Include="util_\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="datasets\db_name" />
+    <Content Include="datasets\db_name.db" />
+    <Content Include="datasets\final" />
+    <Content Include="datasets\meta-base-wcci.db" />
+    <Content Include="datasets\meta-base.db" />
+    <Content Include="datasets\stub.db" />
+    <Content Include="datasets\svm-single.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
